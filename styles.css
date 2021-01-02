@@ -185,11 +185,11 @@ main {
 }
 
 .plant-link {
-  align-self: center;
-  text-align: center;
+  overflow-wrap: break-word;
   background-color: #CFD8DC;
   margin: 0 10px 0 10px;
   padding: 5px;
+  min-height: 50px
 }
 
 .date-stamp,
@@ -212,27 +212,27 @@ main {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Staghorn-Fern.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .two {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Pothos.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .three {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Ponytail-Palm.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .four {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Spider-Plant.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .five {
@@ -246,21 +246,21 @@ main {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Snake-Plant.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .seven {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Monstera.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .eight {
   background: linear-gradient(rgba(0, 0, 0, .4),
       rgba(0, 0, 0, .5)),url("./images/Fiddle-Leaf-Fig.jpeg");
   height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 /*
