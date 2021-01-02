@@ -11,7 +11,7 @@ body {
 body {
   display: grid;
   grid-template-columns: 6fr 6fr;
-  grid-template-rows: 1fr 1fr 10fr;
+  grid-template-rows: 1fr 1fr 10fr 0.3fr;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 .site-title {
   font-size: 3em;
   text-align: right;
-  margin-right: 5px;
+  margin: 5px 5px 0 5px;
   color: white;
 }
 
@@ -42,6 +42,10 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+.user {
+  justify-content: flex-end;
 }
 
 .user,
@@ -62,13 +66,13 @@ nav {
 .fa-seedling,
 .fa-user-circle,
 .fa-share-alt {
-  color: #28B4FF;
+  color: #9E9E9E;
   cursor: pointer;
   padding-right: 5px;
 }
 
 .fa-caret-down {
-  color: #28B4FF;
+  color: #9E9E9E;
   cursor: pointer;
   padding-left: 5px;
 }
@@ -87,7 +91,7 @@ nav {
 main {
   background-color: #CFD8DC;
   padding-left: 20px;
-  grid-row: 3 / -1;
+  grid-row: 3 / 4;
   grid-column: 1 / -1;
 }
 
@@ -95,7 +99,7 @@ main {
   padding-right: 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.9fr 0.9fr 0.5fr;
+  grid-template-rows: repeat(2, 0.8fr);
   grid-gap: 15px;
 }
 
@@ -104,6 +108,7 @@ main {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr;
   box-shadow: 1px 1px 1px 1px grey;
+  margin-bottom: 2px;
 }
 
 .plant-image {
@@ -142,7 +147,7 @@ main {
   align-self: flex-end;
   padding-right: 15px;
   margin-bottom: 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .num-of-views {
@@ -209,7 +214,7 @@ main {
 
 .num-of-attachments {
   font-size: 2.2em;
-  color: #28B4FF;
+  color: #9E9E9E;
 }
 
 .one {
@@ -266,6 +271,42 @@ main {
       rgba(0, 0, 0, .5)), url("./images/Fiddle-Leaf-Fig.jpeg");
   height: 100%;
   background-size: 100% 100%;
+}
+
+footer {
+  grid-row: 4 / -1;
+  grid-column: 1 / -1;
+  background-color: #CFD8DC;
+  height: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .plants-grid-container {
+    grid-template-columns: repeat(3, 0.7fr);
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .plants-grid-container {
+    grid-template-columns: 0.8fr 0.8fr;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .plants-grid-container {
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
 }
 
 /*
