@@ -1,0 +1,312 @@
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: 1fr 1fr 10fr 0.3fr;
+}
+
+header {
+  background-color: #455A64;
+  color: #212121;
+  padding: 10px 25px 35px 0;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-end;
+}
+
+.site-title {
+  font-size: 3em;
+  text-align: right;
+  margin: 5px 5px 0 5px;
+  color: white;
+}
+
+nav {
+  background-color: #455A64;
+  color: #212121;
+  padding: 0 0 35px 20px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.user,
+.shares,
+.playlists,
+.personal-videos {
+  display: flex;
+  flex-direction: row;
+}
+
+.shares,
+.playlists,
+.personal-videos {
+  margin-right: 25px;
+}
+
+.fa-list-ul,
+.fa-seedling,
+.fa-user-circle,
+.fa-share-alt {
+  color: #9E9E9E;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.fa-caret-down {
+  color: #9E9E9E;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.main-title {
+  background-color: #CFD8DC;
+  padding: 30px 0 30px 20px;
+  margin: 0;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  align-self: flex-start;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+main {
+  background-color: #CFD8DC;
+  padding-left: 20px;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+}
+
+.plants-grid-container {
+  padding-right: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 0.8fr);
+  grid-gap: 15px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  box-shadow: 1px 1px 1px 1px grey;
+  margin-bottom: 2px;
+}
+
+.plant-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.forward-icon-holder {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  max-width: 60px;
+  max-height: 60px;
+  margin: 15px 0 0 15px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-share {
+  color: grey;
+  padding: 22.5px;
+}
+
+.view-count {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.views {
+  justify-self: flex-end;
+  align-self: flex-end;
+  padding-right: 15px;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
+.num-of-views {
+  align-self: flex-end;
+  margin-top: 0;
+  padding-right: 15px;
+  font-size: 2.2em;
+}
+
+.plant-info {
+  background-color: #FFFFFF;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+}
+
+.plant-name,
+.date-stamp,
+.plant-link,
+.card-playlists,
+.name-plants-playlists,
+.attachments,
+.num-of-attachments {
+  padding-left: 15px;
+}
+
+.plant-name,
+.card-playlists,
+.attachments {
+  justify-self: flex-start;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.date-stamp,
+.name-plants-playlists,
+.num-of-attachments {
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.plant-link {
+  overflow-wrap: break-word;
+  background-color: #CFD8DC;
+  color: #757575;
+  margin: 0 15px 0 15px;
+  padding: 5px;
+  min-height: 50px;
+  cursor: pointer;
+}
+
+.date-stamp,
+.card-playlists,
+.attachments {
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+
+.plant-name,
+.name-plants-playlists {
+  font-size: 1.2em;
+}
+
+.num-of-attachments {
+  font-size: 2.2em;
+  color: #9E9E9E;
+}
+
+.one {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Staghorn-Fern.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.two {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Pothos.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.three {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Ponytail-Palm.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.four {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Spider-Plant.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.five {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Lucky-Bamboo.jpeg");
+  height: 100%;
+  background-size: 90% 100%;
+}
+
+.six {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Snake-Plant.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.seven {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Monstera.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.eight {
+  background: linear-gradient(rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .5)), url("./images/Fiddle-Leaf-Fig.jpeg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+footer {
+  grid-row: 4 / -1;
+  grid-column: 1 / -1;
+  background-color: #CFD8DC;
+  height: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .plants-grid-container {
+    grid-template-columns: repeat(3, 0.7fr);
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .plants-grid-container {
+    grid-template-columns: 0.8fr 0.8fr;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .plants-grid-container {
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+}
+
+/*

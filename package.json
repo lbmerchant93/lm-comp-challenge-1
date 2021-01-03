@@ -1,0 +1,15 @@
+{
+  "name": "static-comp-challenge-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Turing School of Software and Design",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
